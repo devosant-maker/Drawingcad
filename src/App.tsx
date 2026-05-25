@@ -1,13 +1,13 @@
 import { useCallback, useState } from 'react';
 import { useAppState } from '@/hooks/useAppState';
-import { Canvas } from '@/components/Canvas';
-import { TopBar } from '@/components/TopBar';
-import { BottomBar } from '@/components/BottomBar';
-import { Sidebar } from '@/components/Sidebar';
-import { PropertiesPanel } from '@/components/PropertiesPanel';
-import { LayersPanel } from '@/components/LayersPanel';
-import { TextInputModal } from '@/components/TextInputModal';
-import { ToolDrawer } from '@/components/ToolDrawer';
+import { Canvas } from '@/component/Canvas';
+import { TopBar } from '@/component/TopBar';
+import { BottomBar } from '@/component/BottomBar';
+import { Sidebar } from '@/component/Sidebar';
+import { PropertiesPanel } from '@/component/PropertiesPanel';
+import { LayersPanel } from '@/component/LayersPanel';
+import { TextInputModal } from '@/component/TextInputModal';
+import { ToolDrawer } from '@/component/ToolDrawer';
 import { generateId, duplicateShape } from '@/engine/canvas';
 import type { Shape, ToolType } from '@/types';
 
