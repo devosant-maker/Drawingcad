@@ -378,8 +378,8 @@ export function useCanvasDrawing({
           const worldAfter = screenToWorld(canvasCenterX, canvasCenterY, newViewport);
 
           onSetViewport({
-            offsetX: viewport.offsetX + (worldAfter.x - worldBefore.x) * newScale,
-            offsetY: viewport.offsetY + (worldAfter.y - worldBefore.y) * newScale,
+            offsetX: viewport.offsetX - (worldAfter.x - worldBefore.x) * newScale,
+            offsetY: viewport.offsetY - (worldAfter.y - worldBefore.y) * newScale,
           });
         } else {
           onSetViewport({ scale: newScale });
@@ -412,8 +412,8 @@ export function useCanvasDrawing({
 
         onSetViewport({
           scale: newScale,
-          offsetX: viewport.offsetX + (worldAfter.x - worldBefore.x) * newScale,
-          offsetY: viewport.offsetY + (worldAfter.y - worldBefore.y) * newScale,
+          offsetX: viewport.offsetX - (worldAfter.x - worldBefore.x) * newScale,
+          offsetY: viewport.offsetY - (worldAfter.y - worldBefore.y) * newScale,
         });
       }
     },
