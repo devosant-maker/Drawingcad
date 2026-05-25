@@ -152,7 +152,7 @@ export function Canvas({
   return (
     <div
       ref={containerRef}
-      className="flex-1 relative overflow-hidden"
+      className="absolute inset-0 overflow-hidden"
       style={{ touchAction: 'none', userSelect: 'none' }}
     >
       <canvas
