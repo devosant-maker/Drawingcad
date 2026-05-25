@@ -192,7 +192,7 @@ function App() {
       />
 
       {/* Main Content - Canvas */}
-      <div className="flex-1 relative">
+      <div className="flex-1 relative h-full min-h-0">
         <Canvas
           shapes={state.shapes}
           viewport={state.viewport}
